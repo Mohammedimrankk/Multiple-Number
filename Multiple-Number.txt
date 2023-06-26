@@ -1,0 +1,37 @@
+#include<stdio.h>
+int multiple(int a,int b);
+int main(){
+    int a,b,c;
+
+    printf("Enter the integer value for a = ");
+    scanf("%d",&a);
+
+    printf("Enter the integer value for b = ");
+    scanf("%d",&b);
+
+    multiple(a,b);
+
+    return 0;
+}
+int multiple(int a,int b){
+    int c;
+    if (c!= a % b && c!=b%a)
+    {
+    printf("a and b are not multiple with each other.");
+    }
+    else if (c=a%b)
+    {
+    printf("b is multiple of a.");
+    }
+    else if (c=b%a)
+    {
+    printf("a is multiple of b.");
+    }
+    else if (a=b)
+    {
+    printf("a and b are mutiple of each other.");
+    }
+    else{
+    printf("Wrong value enterd!");
+    }
+}
